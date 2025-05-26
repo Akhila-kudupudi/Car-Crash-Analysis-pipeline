@@ -41,4 +41,89 @@ This project is a full-stack data analytics pipeline developed for car crash ana
 ---
 
 ## 📁 Folder Structure
+car-crash-analysis-pipeline/
+│
+├── data/ # Raw and cleaned datasets
+│ ├── Crash_Reporting_-_Drivers_Data-1.csv
+│ └── car_crashdata_pysparkclean (1).csv
+│
+├── notebooks/ # Jupyter and Colab notebooks
+│ ├── Car_Crash_Processing (1).ipynb
+│ └── google_colab_team1.ipynb
+│
+├── tableau/ # Tableau geospatial analysis file
+│ └── AIT614_finalProject_Tableau_results.twbx
+│
+├── docs/ # Documentation for MongoDB and Databricks
+│ ├── Mongodb connections.pdf
+│ └── connecting databricks and mongodb.pdf
+│
+├── presentation/ # Final project presentation
+│ └── AIT614_ProjectPresentation_Team1.pptx
+│
+├── .gitignore # Files to ignore in version control
+└── README.md # Project overview and instructions
+
+## 🧪 Instructions to Run
+
+### 1. Open the Notebook
+- Open `google_colab_team1.ipynb` using [Google Colab](https://colab.research.google.com).
+
+### 2. Upload the Clean Dataset
+- Upload the file: `car_crashdata_pysparkclean (1).csv`.
+
+### 3. Run the Notebook
+- Follow the steps inside the notebook. It contains:
+  - Data loading and cleaning
+  - Exploratory data analysis (EDA)
+  - Machine learning model building and evaluation
+
+## 🌐 MongoDB + Databricks Integration
+
+To handle large-scale processing and storage, we used MongoDB Atlas for NoSQL data and Databricks for distributed processing.
+
+- Installed `mongo-spark` connector on Databricks
+- Enabled IP access to MongoDB Atlas
+- Connected Databricks via connection string from MongoDB Compass
+- Code is available in the Colab and Databricks notebooks
+
+📄 Refer to:
+- [`docs/Mongodb connections.pdf`](docs/Mongodb%20connections.pdf)
+- [`docs/connecting databricks and mongodb.pdf`](docs/connecting%20databricks%20and%20mongodb.pdf)
+
+## 🤖 Machine Learning Models Tested
+
+We tested five classification models using PySpark MLlib:
+
+| Model                    | Accuracy    |
+|--------------------------|-------------|
+| Random Forest            | **87.71%**  |
+| Gradient Boosted Trees   | 78.22%      |
+| Decision Tree            | 74.16%      |
+| Logistic Regression      | 53.11%      |
+
+✨ Random Forest gave the best results and was used for final predictions.
+
+Key Features Used:
+- Vehicle Movement
+- Driver Distractions
+- Collision Type
+- First Impact Location
+- Second Impact Location
+
+
+## 🌍 Geospatial Analysis (Tableau)
+
+We used Tableau to map crash locations and identify high-risk areas based on:
+- Time of day
+- Severity of crash
+- Driver fault frequency
+
+📊 See: [`FinalProject_Tableau_results.twbx`](tableau/AIT614_finalProject_Tableau_results.twbx)
+
+
+## 🖥️ Final Presentation
+
+View our full presentation here:  
+📂 [`ProjectPresentation.pptx`](presentation/AIT614_ProjectPresentation_Team1.pptx)
 
