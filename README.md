@@ -95,7 +95,7 @@ We used Tableau to map crash locations and identify high-risk areas based on:
 - Severity of crash
 - Driver fault frequency
 
-📊 See: [`FinalProject_Tableau_results.twbx`](tableau/AIT614_finalProject_Tableau_results.twbx)
+📊 See: [`FinalProject_Tableau_results.twbx`](tableau/README_tableau.txt)
 
 
 ##  Final Presentation
